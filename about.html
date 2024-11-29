@@ -79,59 +79,72 @@
 
 
   <!-- Header section starts -->
-  <header>
-    <div class="hero about-hero">
-      <div class="nav about-nav">
-        <div class="container-fluid">
-          <div class="nav-desktop fixed-top">
-            <nav class="navbar navbar-expand-lg desktop-nav">
-              <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">
-                  <img src="assets/images/logo.webp" alt="" />
-                </a>
-                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                  aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                      <a class="nav-link nav-paw" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link nav-paw active" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link nav-paw" href="contact.html">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link nav-paw" href="how-it-works.html">How it Works</a>
-                    </li>
-                  </ul>
-                  <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-end">
-                    <li class="nav-item">
-                      <a class="nav-link nav-paw" href="member-login.html">Member Login</a>
-                    </li>
-                    <li class="nav-item px-3">
-                      <a class="btn btn-primary first-btn" href="signup.html">Breeder Sign Up</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="btn btn-secondary second-btn" href="reseller-package-selection.html">Enroll Members</a>
-                    </li>
-                  </ul>
-                </div>
+  <header class="about__header">
+    <div class="nav about-nav">
+      <div class="container-fluid">
+        <div class="nav-desktop fixed-top">
+          <nav class="navbar navbar-expand-lg desktop-nav">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo.webp" alt="" />
+              </a>
+              <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link nav-paw" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link nav-paw active" href="about.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link nav-paw" href="contact.html">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link nav-paw" href="how-it-works.html">How it Works</a>
+                  </li>
+                </ul>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-end">
+                  <li class="nav-item">
+                    <a class="nav-link nav-paw" href="member-login.html">Member Login</a>
+                  </li>
+                  <li class="nav-item px-3">
+                    <a class="btn btn-primary first-btn" href="signup.html">Breeder Sign Up</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="btn btn-secondary second-btn" href="reseller-package-selection.html">Enroll Members</a>
+                  </li>
+                </ul>
               </div>
-            </nav>
-          </div>
-
+            </div>
+          </nav>
         </div>
+
       </div>
-      <div class="hero-wrapper hero-wrapper-about">
-        <div class="hero-text hero-text-about">
-          <h1>
-            <span class="secondary-color">Paws2Tail Cares</span><br />
-            About You and Your Furry Friends.
+    </div>
+
+    <div class="about__header__wrapper">
+      <div class="about__text">
+        <h1><span class="secondary-color">Paws2Tail Cares</span><br />About You and Your Furry Friends.
+        </h1>
+        <p>Because Pets are family too!</p>
+        <a href="signup.html" class="btn btn-primary hero-btn">Breeder Sign Up</a>
+        <div class="clearfix"></div>
+        <ul class="list">
+          <li>We're revolutionizing</li>
+          <li>virtual</li>
+          <li>veterinary</li>
+          <li>care</li>
+        </ul>
+      </div>
+      <div class="about__header__img">
+        <!-- <img src="assets/images/about-hero-img.jpg" alt="" class="img-fluid"> -->
+        <div class="about__text__hide">
+          <h1><span class="secondary-color">Paws2Tail Cares</span><br />About You and Your Furry Friends.
           </h1>
           <p>Because Pets are family too!</p>
           <a href="signup.html" class="btn btn-primary hero-btn">Breeder Sign Up</a>
@@ -143,14 +156,22 @@
             <li>care</li>
           </ul>
         </div>
-        <div class="hero-img" style="
-              background-image: url('assets/images/about-hero-img.webp');
-            "></div>
       </div>
+    </div>
+    <div class="about__keywords">
+      <h3>Convenient</h3>
+      <h3>Guidance</h3>
+      <h3>Affordable</h3>
+      <h3>Peace of mind</h3>
+      <h3>Save money</h3>
     </div>
   </header>
   <!-- Header section ends -->
-  <div class="about-keywords about-keywords-about">
+
+
+
+
+  <!-- <div class="about-keywords about-keywords-about">
     <div class="about-keywords-item">
       <h3>
         <img src="assets/images/icons/secondary-paw.svg" alt="Are you are a Pet Perent or a Breeder?" />
@@ -181,7 +202,7 @@
         Save money
       </h3>
     </div>
-  </div>
+  </div> -->
 
   <section class="features-section">
     <div class="container">
