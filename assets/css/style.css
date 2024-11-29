@@ -3340,6 +3340,8 @@ ABOUT PAGE - Header section
   .about__header__img{
     flex-basis: 100%;
     background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../images/about-hero-img.jpg');
+    background-position: center;
+    background-size: cover;
   }
 }
 
@@ -3509,6 +3511,13 @@ ABOUT PAGE - Header section
 
   .about__header .about__keywords h3:not(:first-child){
     border-left: 1px solid white;
+  }
+}
+
+@media(width<450px){
+  .about__header .about__keywords h3{
+    font-size: 8px;
+    padding: 0.5rem 6px;
   }
 }
 
