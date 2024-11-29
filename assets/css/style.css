@@ -3406,7 +3406,7 @@ ABOUT PAGE - Header section
   display: none;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: flex-end;
   height: 80vh;
   padding-left: 50px;
 }
