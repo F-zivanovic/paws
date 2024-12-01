@@ -1148,6 +1148,98 @@ header {
 /* ---------------------------------
 HEADER SECTION - Home page
 --------------------------------- */
+.header__image{
+  display: none;
+  position: relative;
+}
+
+.header__bottom{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.header__bottom h3{
+  background-color: white;
+  color: var(--primary-bg);
+  flex-basis: 120px;
+  font-weight: 550;
+  cursor: default;
+  font-size: 15px;
+  border-radius: 20px;
+  text-align: center;
+  padding: 5px 0;
+}
+
+@media(max-width:768px){
+  .header__bottom h3{
+    font-size: 12px;
+    flex-basis: 100px;
+  }
+}
+
+@media(max-width:576px){
+  .header__bottom h3{
+    font-size: 10px;
+    flex-basis: 80px;
+  }
+}
+
+.header__text{
+  display: none;
+}
+
+.header__text__h2{
+  font-size: 30px;
+  font-weight: 900;
+  color: var(--primary-bg);
+}
+
+.header__text__p{
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.header__text a{
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+@media(max-width:576px){
+  .header__text__h2{
+    font-size: 20px;
+  }
+  
+  .header__text__p{
+    font-size: 12px;
+    max-width: 350px;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+  
+  .header__text a{
+    font-size: 14px;
+  }
+}
+
+@media(max-width:912px){
+  .header__text{
+    text-align: center;
+    display: block;
+    background-color: white;
+    margin: 0 auto;
+    padding: 40px 0;
+  }
+}
+
 .header{
   background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/main-hero-img.jpg');
   height: 100vh;
@@ -1155,10 +1247,15 @@ HEADER SECTION - Home page
   background-position: center;
 }
 
-@media(width<992px){
+@media(width<912px){
   .header{
-    height: 80vh;
+    display: none;
   } 
+
+  .header__image{
+    display: block;
+  }
+  
 }
 
 .header__wrapper{
@@ -1169,12 +1266,12 @@ HEADER SECTION - Home page
   height: 90vh;
   text-align: center;
 }
-
-@media(width<992px){
+/* 
+@media(max-width:912px){
   .header__wrapper{
-    height: 80vh;
-  } 
-}
+    display: none;
+  }
+} */
 
 .header__wrapper h1{
   font-weight: 700;
@@ -2057,6 +2154,9 @@ WHO WE ARE SECTION - Home page
   }
 }
 
+/* ------------------------------
+PROCESS SECTION - Home page
+------------------------------- */
 .online-vet-cta-btns.outside {
   text-align: center;
   padding-block: 20px;
@@ -2093,6 +2193,10 @@ WHO WE ARE SECTION - Home page
   align-items: center;
   justify-content: center;
   gap: 14px;
+}
+
+.online-vet-text-item-icon img{
+  width: 44px;
 }
 .online-vet-text-item-text {
   position: relative;
@@ -2194,6 +2298,12 @@ WHO WE ARE SECTION - Home page
   line-height: 20px;
   color: var(--primary-bg);
 }
+
+
+
+/* ------------------------------
+SERVICES SECTION - Home page
+------------------------------ */
 
 .services-section {
   margin: 0;
@@ -3071,6 +3181,7 @@ footer.footer-mobile .footer-col.fourth .footer-col-links a {
 }
 footer.footer-mobile .footer-col.fourth .footer-col-links a img {
   margin-right: 3px;
+  /* width: 20px; */
 }
 footer.footer-mobile .social-links {
   text-align: center;
@@ -3613,12 +3724,12 @@ CONTACT SECTION - Contact page
 }
 
 @media(max-width:576px){
-  .inline-list{
+  .reseller-package-page .pricing-table-item-inner .inline-list{
     flex-direction: column;
     justify-content: center;;
   }
 
-  .inline-list ul{
+  .reseller-package-page .pricing-table-item-inner .inline-list ul{
     width: 100% !important;
   }
 }
@@ -5801,7 +5912,6 @@ CONTACT HERO - Contact page
 @media (max-width: 576px) {
   .signup-section {
     margin-top: 20px;
-    border: 2px solid red;
   }
 }
 /*# sourceMappingURL=style.css.map */
