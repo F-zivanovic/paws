@@ -1892,7 +1892,7 @@ WHO WE ARE SECTION - Home page
   margin-top: 30px;
   padding-left: 50px;
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 @media (max-width: 992px) {
@@ -1927,18 +1927,23 @@ WHO WE ARE SECTION - Home page
   display: flex; /* Use flexbox for alignment */
   align-items: center; /* Vertically center the content */
 }
+
+.who-we-are-desktop .paw-list li:not(:last-child){
+  margin-bottom: 1rem;
+}
 @media (max-width: 1024px) {
   .who-we-are-desktop .paw-list li {
     font-size: 16px;
   }
 }
-@media (max-width: 922px) {
+
+@media (max-width: 500px) {
   .who-we-are-desktop .paw-list li {
     font-size: 12px;
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 420px) {
   .who-we-are-desktop .paw-list li {
     font-size: 10px;
     line-height: 1.8;
@@ -1952,7 +1957,7 @@ WHO WE ARE SECTION - Home page
   content: "";
   display: inline-block;
   flex: 0 0 25px;
-  height: 20px;
+  height: 25px;
   background-image: url(../images/icons/secondary-paw.svg);
   background-size: contain;
   background-repeat: no-repeat;
@@ -1963,7 +1968,7 @@ WHO WE ARE SECTION - Home page
 @media (max-width: 412px) {
   .who-we-are-desktop .paw-list li:before {
     flex: 0 0 20px;
-    height: 15px;
+    height: 20spx;
   }
 }
 .who-we-are-desktop .paw-list span {
