@@ -1192,6 +1192,19 @@ HEADER SECTION - Home page
   }
 }
 
+@media(max-width:460px){
+  .header__bottom h3{
+    flex-basis: 120px;
+  }
+}
+
+@media(max-width:390px){
+  .header__bottom h3{
+    flex-basis: 90px;
+  }
+}
+
+
 .header__text{
   display: none;
 }
@@ -3188,8 +3201,12 @@ footer.footer-mobile .footer-col.second {
 footer.footer-mobile .footer-col.second .footer-col-links {
   margin-top: 0;
 }
-footer.footer-mobile .footer-col.third {
-  padding-bottom: 0px;
+
+
+@media(max-width:768px){
+  footer.footer-mobile .footer-col.third .hide{
+    display: none;
+  }
 }
 footer.footer-mobile .footer-col.third .footer-col-links {
   margin-top: 0;
@@ -5672,6 +5689,20 @@ CONTACT HERO - Contact page
   font-size: 30px;
   line-height: 1;
 }
+
+
+@media(max-width:992px){
+
+  .order-one{
+    order: 100;
+  }
+  
+  .order-two{
+    order: 1;
+  }
+  
+
+}
 .inner-page h1:after,
 .inner-page h2:after,
 .inner-page h3:after,
@@ -5683,8 +5714,7 @@ CONTACT HERO - Contact page
   height: 3px;
   background-color: var(--accent-bg);
   width: 150px;
-  margin-top: 10px;
-  margin-bottom: 5px;
+  margin: 10px auto;
 }
 .inner-page .position-right-one,
 .inner-page .position-left-one,

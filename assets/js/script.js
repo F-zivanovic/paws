@@ -96,7 +96,7 @@ if (textElement) {
 // Check if .slider class exists
 // Check if .slider class exists
 if ($(".slider").length > 0) {
-  console.log("slider found");
+  console.log("slider found xa");
   // Append CSS links dynamically to load Slick CSS
   var slickCSS = document.createElement("link");
   slickCSS.rel = "stylesheet";
