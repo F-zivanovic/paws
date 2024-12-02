@@ -3208,7 +3208,7 @@ footer.footer-mobile .footer-col.second .footer-col-links {
 }
 
 
-@media(max-width:768px){
+@media(max-width:992px){
   footer.footer-mobile .footer-col.third .hide{
     display: none;
   }
