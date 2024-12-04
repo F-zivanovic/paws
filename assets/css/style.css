@@ -1243,7 +1243,7 @@ HEADER SECTION - Home page
   }
 }
 
-@media(max-width:912px){
+@media(max-width:992px){
   .header__text{
     text-align: center;
     display: block;
@@ -1254,13 +1254,13 @@ HEADER SECTION - Home page
 }
 
 .header{
-  background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/main-hero-img.jpg');
+  background-image:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../images/main-hero-img.jpg');
   height: 100vh;
   background-size: cover;
   background-position: center;
 }
 
-@media(width<912px){
+@media(width<992px){
   .header{
     display: none;
   } 
@@ -1268,7 +1268,6 @@ HEADER SECTION - Home page
   .header__image{
     display: block;
   }
-  
 }
 
 .header__wrapper{
@@ -1386,7 +1385,7 @@ HEADER SECTION - Home page
   display: block;
 }
 
-@media (max-width: 922px) {
+@media (max-width: 992px) {
   .desktop-nav {
     display: none;
   }
@@ -1579,7 +1578,7 @@ NAVBAR SECTION - Home page
 .mobile-nav {
   display: none;
 }
-@media (max-width: 922px) {
+@media (max-width: 992px) {
   .mobile-nav {
     display: block;
   }
@@ -1610,6 +1609,7 @@ NAVBAR SECTION - Home page
   z-index: 10;
   background-color: var(--primary-bg);
   text-align: center;
+  /* border: 2px solid red; */
 }
 .mobile-nav #navbarmobile .nav-link {
   color: var(--white-color);
