@@ -1243,7 +1243,7 @@ HEADER SECTION - Home page
   }
 }
 
-@media(max-width:992px){
+@media(max-width:1200px){
   .header__text{
     text-align: center;
     display: block;
@@ -1260,7 +1260,7 @@ HEADER SECTION - Home page
   background-position: center;
 }
 
-@media(max-width:992px){
+@media(max-width:1200px){
   .header{
     display: none;
   } 
@@ -1386,7 +1386,7 @@ HEADER SECTION - Home page
   display: block;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   .desktop-nav {
     display: none;
   }
@@ -1579,7 +1579,7 @@ NAVBAR SECTION - Home page
 .mobile-nav {
   display: none;
 }
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   .mobile-nav {
     display: block;
   }

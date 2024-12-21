@@ -33,23 +33,23 @@ function getVersion() {
   return Date.now();
 }
 
-// document.addEventListener("DOMContentLoaded", function () {
-//   const version = getVersion(); // Get the version once and use it
+document.addEventListener("DOMContentLoaded", function () {
+  const version = getVersion(); // Get the version once and use it
 
-//   // Update the version number in the CSS URLs
-//   document.querySelectorAll('link[rel="stylesheet"]').forEach((link) => {
-//     const href = link.getAttribute("href");
-//     link.setAttribute("href", href + `?ver=${version}`);
-//     console.log(link);
+  // Update the version number in the CSS URLs
+  document.querySelectorAll('link[rel="stylesheet"]').forEach((link) => {
+    const href = link.getAttribute("href");
+    link.setAttribute("href", href + `?ver=${version}`);
+    console.log(link);
     
-//   });
+  });
 
-//   // Update the version number in the JavaScript URLs
-//   document.querySelectorAll("script[src]").forEach((script) => {
-//     const src = script.getAttribute("src");
-//     script.setAttribute("src", src + `?ver=${version}`);
-//   });
-// });
+  // Update the version number in the JavaScript URLs
+  document.querySelectorAll("script[src]").forEach((script) => {
+    const src = script.getAttribute("src");
+    script.setAttribute("src", src + `?ver=${version}`);
+  });
+});
 
 // cta animated text start
 // Define the array of strings
